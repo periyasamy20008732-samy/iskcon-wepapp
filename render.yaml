@@ -1,9 +1,0 @@
-services:
-  - type: cron
-    name: scheduled-task
-    schedule: "*/5 * * * *"
-    buildCommand: "npm install"
-    startCommand: "node cron-script.js"
-    envVars:
-      - key: NODE_VERSION
-        value: "20"
